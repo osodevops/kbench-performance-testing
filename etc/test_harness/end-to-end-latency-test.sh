@@ -27,5 +27,4 @@ do
     echo ""
     echo "Running EndToEndLatency : $i th"
     kafka-run-class kafka.tools.EndToEndLatency "$SERVER_LIST" "$TOPIC" 100000 1 254 > $RESULTS_DIR/eLog-$i.txt 2>&1 &
-    kafka-run-class kafka.tools.EndToEndLatency localhost:9092 topic_name 1000 all 400
 done;
