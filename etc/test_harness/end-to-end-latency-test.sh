@@ -14,7 +14,7 @@ NO_OF_LATENCYTEST=$1
 SERVER_LIST=$2
 TOPIC="test-latency"
 
-RESULTS_DIR=endToEndLatencyLog
+RESULTS_DIR=out/endToEndLatencyLog
 
 if [ -d $RESULTS_DIR ]; then
  rm -rf $RESULTS_DIR
