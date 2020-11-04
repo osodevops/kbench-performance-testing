@@ -16,14 +16,14 @@ export LINGER=1000
 export INFLIGHT=1
 export COUNT=1
 echo "Running producers:" $COUNT `date`
-#./run-producers.sh
+./run-producers.sh
 
 echo "Waiting for 3 minutes to clear stats" `date`
 ###sleep 180
 
 COUNT=10
 echo "Running producers:" $COUNT `date`
-./run-producers.sh
+#./run-producers.sh
 
 echo "Waiting for 3 minutes to clear stats" `date`
 ###sleep 180
